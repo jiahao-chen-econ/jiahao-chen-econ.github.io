@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Jiahao Chen, Ph.D. candidate in Economics at the University of Michigan. Research on innovation, competition, and the digital economy.">
+  <meta name="robots" content="noindex">
+  <title>Jiahao Chen | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: only light; --paper:#fff; --ink:#292b2d; --muted:#686b6d; --rule:#e0e1df; --accent:#435d70; --photo:#f0f0ed; }
+    * { box-sizing:border-box; }
+    html { background:var(--paper); }
+    body { margin:0; background:var(--paper); color:var(--ink); font:400 16px/1.65 'DM Sans',Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    .site { width:min(100%,860px); margin:0 auto; padding:0 38px; }
+    header { text-align:center; padding:42px 0 0; }
+    header h1 { margin:0 0 27px; font-size:36px; }
+    nav { display:flex; justify-content:center; align-items:center; gap:25px; font-size:12px; letter-spacing:1px; text-transform:uppercase; }
+    nav::before,nav::after { content:''; height:1px; background:var(--rule); flex:1; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; text-underline-offset:4px; }
+    p { margin:0 0 16px; }
+    h1,h2,h3 { color:var(--ink); font-family:'Source Serif 4',Georgia,serif; font-weight:400; }
+    h1 { font-size:36px; line-height:1.15; letter-spacing:-.8px; margin:12px 0 15px; }
+    h2 { font-size:21px; line-height:1.4; letter-spacing:-.15px; margin:9px 0 7px; }
+    h3 { font-size:16.5px; line-height:1.45; margin:0 0 6px; }
+    .intro { display:grid; grid-template-columns:220px minmax(0,1fr); align-items:center; gap:44px; padding:42px 0 36px; }
+    .kicker { color:var(--muted); font-size:12px; font-weight:500; line-height:1.5; letter-spacing:1.35px; margin:0 0 12px; }
+    .lead { font:400 19px/1.45 'Source Serif 4',Georgia,serif; max-width:450px; margin-bottom:15px; }
+    .about { max-width:480px; font-size:16px; line-height:1.7; }
+    .links { display:flex; align-items:baseline; flex-wrap:wrap; gap:10px 23px; font-size:14px; }
+    .link-placeholder { color:var(--accent); border-bottom:1px solid var(--accent); }
+    .links a { border-bottom:1px solid var(--accent); }
+    .portrait { display:block; width:100%; height:auto; aspect-ratio:1; object-fit:cover; border-radius:50%; background:var(--photo); filter:url(#portrait-sharpen); }
+    section { padding:15px 0 28px; }
+    section > .kicker { display:flex; justify-content:center; align-items:center; gap:22px; text-align:center; margin:0 0 23px; }
+    section > .kicker::before,section > .kicker::after { content:''; height:1px; background:var(--rule); flex:1; }
+    .question { font-size:15px; line-height:1.65; margin:0 0 13px; }
+    .paper-actions { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 23px; font-size:14px; }
+    details { flex-basis:100%; }
+    summary { color:var(--accent); cursor:pointer; width:fit-content; }
+    details p { max-width:60ch; margin:15px 0 0; font-size:16px; line-height:1.8; }
+    .project + .project { margin-top:23px; }
+    .project .question { margin-bottom:0; }
+    .teaching p:last-child { font-size:15px; line-height:1.95; margin:0; }
+    footer { display:flex; justify-content:center; flex-wrap:wrap; gap:12px 24px; text-align:center; border-top:1px solid var(--rule); padding:19px 0 25px; color:var(--muted); font-size:12px; }
+    footer a { color:var(--muted); }
+    @media(max-width:650px) {
+      .site { padding:0 24px; }
+      header { padding-top:30px; }
+      header h1 { font-size:32px; margin-bottom:23px; }
+      nav { gap:18px; font-size:12px; }
+      .intro { grid-template-columns:125px minmax(0,1fr); gap:26px; padding:32px 0; }
+      h1 { font-size:32px; }
+      h2 { font-size:20px; }
+      .lead { font-size:18px; }
+      .kicker { letter-spacing:1px; }
+      section > .kicker { gap:13px; }
+    }
+    @media(max-width:600px) {
+      .intro { grid-template-columns:1fr; gap:20px; }
+      .portrait { width:125px; justify-self:center; }
+    }
+    @media(max-width:440px) {
+      .portrait { width:112px; }
+      header h1 { font-size:30px; }
+      h1 { font-size:30px; }
+      h2 { font-size:19px; }
+      .links { gap:10px 20px; }
+    }
+    @media(pointer:coarse) { nav a,summary { min-height:44px; align-content:center; } }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;overflow:hidden">
+    <filter id="portrait-sharpen" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.45" result="softened"/>
+      <feComposite in="SourceGraphic" in2="softened" operator="arithmetic" k1="0" k2="1.35" k3="-0.35" k4="0"/>
+    </filter>
+  </svg>
+  <div class="site">
+    <header>
+      <h1>Jiahao Chen</h1>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <span class="link-placeholder" aria-label="CV PDF link placeholder">CV ↗</span>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <img class="portrait" src="portrait.jpg" width="600" height="600" alt="Jiahao Chen" fetchpriority="high">
+        <div>
+          <p class="kicker">ECONOMICS · UNIVERSITY OF MICHIGAN</p>
+          <p class="lead">I study innovation, competition,<br>and the digital economy.</p>
+          <p class="about">I am a Ph.D. candidate in Economics at the University of Michigan. I am on the 2026–2027 job market.</p>
+          <p class="about">Fields: Industrial Organization; Economics of Innovation, Digital Economy</p>
+          <div class="links">
+            <span class="link-placeholder" aria-label="CV PDF link placeholder">CV (PDF) ↗</span>
+            <span class="link-placeholder" aria-label="Job market paper download placeholder">Job market paper ↗</span>
+            <a href="mailto:cjiahao@umich.edu">Email ↗</a>
+          </div>
+        </div>
+      </div>
+      <section id="research" aria-labelledby="jmp-title">
+        <p class="kicker">JOB MARKET PAPER</p>
+        <h2 id="jmp-title">Innovation Policy in Product-Line Markets: Evidence from GPUs</h2>
+        <p class="question">What does society gain from R&amp;D, and what can policy add?</p>
+        <div class="paper-actions">
+          <span class="link-placeholder" aria-label="Paper download placeholder">Paper (latest PDF) ↗</span>
+          <details>
+            <summary>Abstract</summary>
+            <p id="jmp-abstract">I study the effects of innovation policies in product-line markets, using a dynamic oligopoly model with endogenous pricing, product-line adjustment, and R&amp;D. I apply the model to the desktop GPU market, a duopoly between NVIDIA and AMD. I find that a dollar of R&amp;D generates about $9.0 of within-market surplus net of that dollar, with the firms capturing $3.0 and consumers the rest. But the return to public support is far more modest. I simulate three stylized interventions: an R&amp;D credit and two product rebates, one at the cutting edge and one on the mass market. Only the R&amp;D credit induces a material increase in private R&amp;D, but it returns only $0.51 of surplus per public dollar because additionality is low: most of its outlay reimburses research the firms would have conducted anyway. The rebate on cutting-edge products returns only $0.23 per public dollar and sets back the technology frontier. Subsidizing both firms, it ignites a price war at the top of the line, benefiting consumers but undercutting the reason firms advance the frontier. The mass-market rebate sets off the same war lower down the product line but expands adoption enough that R&amp;D survives, returning $1.09 per public dollar. These results suggest that innovation policy in product-line markets is a more intricate design problem than in markets with simpler structure. Each instrument induces a distinct equilibrium response in prices, qualities, and R&amp;D. The static and dynamic components of that response can offset or reinforce each other, attenuating or even reversing the intended effect.</p>
+          </details>
+        </div>
+      </section>
+      <section aria-labelledby="work-heading">
+        <p class="kicker" id="work-heading">WORK IN PROGRESS</p>
+        <article class="project">
+          <h3>Foundational Technology and Downstream Innovation: The Case of LLMs and Mobile Applications</h3>
+          <p class="question">How much value has AI created in the mobile app market?</p>
+        </article>
+        <article class="project">
+          <h3>Rhetoric, News, and Demand: How Information Style Shapes Consumer Behavior</h3>
+          <p class="question">Does style matter?</p>
+        </article>
+      </section>
+      <section class="teaching" id="teaching" aria-labelledby="teaching-heading">
+        <p class="kicker" id="teaching-heading">TEACHING · GRADUATE STUDENT INSTRUCTOR</p>
+        <p>Matching and Market Design · 2023, 2024, 2025<br>Principles of Economics · Fall 2022</p>
+      </section>
+    </main>
+    <footer><span>Jiahao Chen · University of Michigan</span><a href="mailto:cjiahao@umich.edu">cjiahao@umich.edu</a></footer>
+  </div>
+</body>
+</html>
