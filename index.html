@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Last updated: October 3, 2026. -->
+<!-- Last updated: October 4, 2026. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -16,10 +16,8 @@
     html { background:var(--paper); }
     body { margin:0; background:var(--paper); color:var(--ink); font:400 16px/1.65 'DM Sans',Arial,sans-serif; -webkit-font-smoothing:antialiased; }
     .site { width:min(100%,860px); margin:0 auto; padding:0 38px; }
-    header { text-align:center; padding:42px 0 0; }
-    header h1 { margin:0 0 27px; font-size:36px; }
-    nav { display:flex; justify-content:center; align-items:center; gap:25px; font-size:13px; letter-spacing:1px; text-transform:uppercase; }
-    nav::before,nav::after { content:''; height:1px; background:var(--rule); flex:1; }
+    header { text-align:center; padding:42px 0 27px; border-bottom:1px solid var(--rule); }
+    header h1 { margin:0; font-size:36px; }
     a { color:var(--accent); text-decoration:none; }
     a:hover { text-decoration:underline; text-underline-offset:4px; }
     p { margin:0 0 16px; }
@@ -51,9 +49,8 @@
     footer a { color:var(--muted); }
     @media(max-width:650px) {
       .site { padding:0 24px; }
-      header { padding-top:30px; }
-      header h1 { font-size:32px; margin-bottom:23px; }
-      nav { gap:18px; }
+      header { padding:30px 0 23px; }
+      header h1 { font-size:32px; }
       .intro { grid-template-columns:125px minmax(0,1fr); gap:26px; padding:32px 0; }
       h1 { font-size:32px; }
       h2 { font-size:20px; }
@@ -62,8 +59,7 @@
       section > .kicker { gap:13px; }
     }
     @media(max-width:600px) {
-      header { padding-top:24px; }
-      header h1 { margin-bottom:18px; }
+      header { padding:24px 0 18px; }
       .intro { grid-template-columns:1fr; gap:16px; padding:24px 0; }
       .portrait { width:125px; justify-self:center; }
     }
@@ -74,7 +70,7 @@
       h2 { font-size:19px; }
       .links { gap:10px 20px; }
     }
-    @media(pointer:coarse) { nav a,summary { min-height:44px; align-content:center; } }
+    @media(pointer:coarse) { summary { min-height:44px; align-content:center; } }
   </style>
 </head>
 <body>
@@ -87,11 +83,6 @@
   <div class="site">
     <header>
       <h1>Jiahao Chen</h1>
-      <nav aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="cv.pdf" rel="nofollow">CV ↗</a>
-      </nav>
     </header>
     <main>
       <div class="intro">
