@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /cv.pdf
-Disallow: /jmp.pdf
+Disallow:
